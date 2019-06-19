@@ -29,7 +29,7 @@ final class UniversityType extends InputObjectType implements GeneratedTypeInter
                     'description' => null,
                     # validation is a custom option managed only by the bundle
                     'validation' => [
-                    'link' => ['App\Entity\University', 'title', 'property'],
+                    'link' => ['App\Entity\University', 'title', 'member'],
                     'constraints' => null,
                     'cascade' => null
                 ]

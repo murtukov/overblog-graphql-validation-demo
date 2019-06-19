@@ -103,7 +103,7 @@ University:
         fields:
             title:
                 type: String
-                validation: 'App\Entity\University::$title'     # property and all getters
+                validation: 'App\Entity\University::title'     # property and all getters
             address:
                 type: String
                 validation: 'App\Entity\University::$address'  # only property
