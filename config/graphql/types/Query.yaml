@@ -1,0 +1,12 @@
+Query:
+    type: object
+    config:
+        description: "Overblog GraphQLBundle Demo Project"
+        fields:
+            author:
+                type: String
+                args:
+                    id:
+                        description: "Возвращает автора по его ID"
+                        type: "Int"
+                resolve: "@=resolver('Author', [args, info])"

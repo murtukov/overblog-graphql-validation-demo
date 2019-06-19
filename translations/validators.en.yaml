@@ -1,0 +1,1 @@
+createUser.username.not_blank: 'The username should not be blank! {{ limit }}'

@@ -4,6 +4,7 @@
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
+    locale: 'en'
 
 services:
     # default configuration for services in *this* file
@@ -25,3 +26,14 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    App\GraphQL\:
+        resource: '../src/GraphQL'
+
+    _instanceof:
+        GraphQL\Type\Definition\Type:
+            tags: ['overblog_graphql.type']
+        Overblog\GraphQLBundle\Definition\Resolver\ResolverInterface:
+            tags: ['overblog_graphql.resolver']
+        Overblog\GraphQLBundle\Definition\Resolver\MutationInterface:
+            tags: ['overblog_graphql.mutation']
