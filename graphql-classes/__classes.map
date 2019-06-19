@@ -1,0 +1,9 @@
+<?php
+return array (
+  'Overblog\\GraphQLBundle\\__DEFINITIONS__\\MutationType' => __DIR__ . '/MutationType.php',
+  'Overblog\\GraphQLBundle\\__DEFINITIONS__\\PeriodType' => __DIR__ . '/PeriodType.php',
+  'Overblog\\GraphQLBundle\\__DEFINITIONS__\\AddressType' => __DIR__ . '/AddressType.php',
+  'Overblog\\GraphQLBundle\\__DEFINITIONS__\\UniversityType' => __DIR__ . '/UniversityType.php',
+  'Overblog\\GraphQLBundle\\__DEFINITIONS__\\QueryType' => __DIR__ . '/QueryType.php',
+  'Overblog\\GraphQLBundle\\__DEFINITIONS__\\PageInfoType' => __DIR__ . '/PageInfoType.php',
+);
